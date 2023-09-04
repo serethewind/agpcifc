@@ -158,16 +158,19 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">News</a>
+            <a class="nav-link active" aria-current="page" href="#news-section">News</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Teams</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true" href="#video-section">Video</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Video</a>
+            <a class="nav-link" aria-disabled="true" href="#photo-gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Gallery</a>
+            <a class="nav-link" aria-disabled="true">About</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -240,13 +243,13 @@
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <!-- <div class="container marketing"> -->
 
     <!-- <hr class="featurette-divider"> -->
  
       <!-- Latest News
   ================================================== -->
-    
+  <section id="news-section">
       <div class="container pt-3 mb-3">
         <div>
           <h3 class="pb-2">LATEST NEWS | <span class="text-danger">See more</span></h3>
@@ -346,13 +349,14 @@
           </div>
         </div>
       </div>
+      </section>
 
 
       
    <!-- Latest Videos
   ================================================== -->
 
-    <section data-bs-theme="dark" class="bg-dark mt-5">
+    <section data-bs-theme="dark" class="bg-dark mt-5" id="video-section">
       <div class="container py-4" >
         <div>
           <h4 class="py-4 text-white">VIDEOS | <span class="text-warning">Watch more</span></h3>
@@ -452,31 +456,34 @@
       </div>
     </section>
     
-    <section class="bg-light mt-5" data-bs-theme="light">
+  <!-- Photo gallery
+  ================================================== -->
 
-      <div class="container py-4" >
-        <div>
-          <h4 class="py-4 text-dark">PHOTO GALLERIES | <span class="text-warning">See more</span></h3>
+  <section class="bg-light mt-5" data-bs-theme="light" id="photo-gallery">
+    <div class="container py-4">
+      <div>
+        <h4 class="py-4 text-dark">PHOTO GALLERIES | <span class="text-warning">See more</span></h4>
+      </div>
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-light bg-secondary-subtle border rounded-3">
+            <h2>Matchday Photos</h2>
+            <img src="images/news/pexels-yogendra-singh-1375152.jpg" alt="Image Alt Text" class="img-fluid py-3">
+            <button class="btn btn-outline-dark" type="button">Click to view</button>
+          </div>
         </div>
-
-    <div class="row align-items-md-stretch">
-      <div class="col-md-6">
-        <div class="h-100 p-5 text-bg-light border rounded-3">
-          <h2>Change the background</h2>
-          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark border rounded-3">
+            <h2>Training photos</h2>
+            
+            <img src="images/news/pexels-pixabay-274422.jpg" alt="Image Alt Text" class="img-fluid py-3">
+            <button class="btn btn-outline-secondary" type="button">Click to view</button>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="h-100 p-5 text-bg-dark border rounded-3">
-          <h2>Add borders</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
-        </div>
-      </div>
-    </div> 
-    
+    </div>
   </section>
+  
 
   <section>
     <div>
